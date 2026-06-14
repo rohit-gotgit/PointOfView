@@ -1,0 +1,15 @@
+.comments{
+    color: #e0d5d5;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.comment__info{
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.comment__username{
+    text-transform: uppercase;
+    font-weight: 700;
+}

@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono&display=swap');
+
+/* Define the CSS class */
+.reddit-mono {
+  font-family: "Reddit Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.wrapper
+{
+    /* position: relative; */
+    /* background-image: url(../assets/login_bg.jpg); */
+    background-color: #191919;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /* flex-direction: column; */
+    /* position: absolute; */
+    /* transform: translate(-50%, -50%); */
+}
+.login__left {
+position: absolute;
+top: 20px;
+left:20px
+    
+  }
+  
+  
+  .login__logo {
+    top: 0;
+    height: 200px;
+    object-fit: contain;
+  }
+.heading__pov{
+text-align: center;
+margin-bottom: 50px;
+margin-right: 10%;
+}
+
+.heading__pov .heading{
+    font-size: 100px;
+}
+.heading__pov .subheading{
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-size: 33px;
+}
+
+  
+form {
+    width: 450px; /* Adjust the width of the login box as needed */
+    height: 500px;
+    padding: 20px;
+    /* border: 2px solid rgba(255, 255, 255, 0.2); */
+    border: 1px solid white;
+    /* backdrop-filter: blur(30px); */
+    border-radius: 10px;
+    background-color: #191919;
+    /* background: transparent; */
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 47%; */
+
+  }
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+    color: #B9131A;
+    text-transform: uppercase;
+}
+
+
+.wrapper .input-box
+{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    /* background: gray ; */
+    margin: 30px 0;
+}
+
+.input-box input
+{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border:1px solid white;
+    border-radius: 30px; 
+    font-size: 16px;
+    color: white;
+    padding: 20px 45px 20px 20px ;
+
+}
+
+.input-box input::placeholder
+{
+    color: white;
+}
+.input-box .login__icon
+{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    /* color: ${(props) => (props.hasValue ? 'black' : 'white')}; */
+}
+
+.wrapper .remember-forgot
+{
+    display: flex;
+    justify-content: center;
+    font-size: 14.5px;
+    margin: 15px 0 15px;
+}
+.remember-forgot label input{
+    accent-color: white;
+    /* margin-right: 1px; */
+}
+
+.remember-forgot a{
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+.wrapper button
+{
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    border: 1px solid white;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    align-items: center;  
+    display: flex;
+    justify-content: center;
+}
+.wrapper button:hover{
+    color: red;
+}
+
+.wrapper .register-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
+.register-link p a {
+    color:white;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 10px;
+}
+.register-link p a:hover{
+    color: red;
+}
+.register-link p a:hover
+{
+    text-transform: underline;
+}
+
+.channel-link {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .channel-link p {
+    font-size: 20px;
+  }
+  
+  .channel-link p a {
+    
+    color: lightgray;
+    text-decoration: none;
+  }
+  
+  .channel-link p a:hover {
+    color:red;
+  }
+  

@@ -1,0 +1,173 @@
+.video {
+  background-color: #191919;
+  width: 100%;
+}
+
+.video__information {
+  display: flex;
+}
+
+.video__main {
+  margin-left: 40px;
+  width: 930px;
+}
+
+.video__player {
+  margin-top: 40px;
+  width: 910px;
+}
+
+.video__play {
+  width: 910px;
+}
+
+.video__card {
+  width: 10px;
+  height: 10px;
+}
+
+.video__sideRecom {
+  margin-top: 30px;
+}
+
+.vcard__details{
+  display: flex;
+}
+.video__title {
+  font-weight: 600;
+  font-size: 25px;
+  margin-bottom: 0;
+  color: #fff;
+}
+
+.video__channel {
+  margin-top: 15px;
+  width: 47px;
+  height: 47px;
+  border: 0.5px black;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+
+.video__text {
+  font-size: 22px;
+  margin-bottom: 5px; 
+}
+
+.video__details {
+  display: flex;
+  margin-bottom: 7px;
+}
+
+.video__views {
+  margin-top: 0;
+  font-size: 15px;
+  color: #aba3a3;
+  margin-right: 2px;
+  margin-bottom: 0;
+}
+.video__age {
+  margin-top: 0;
+  font-size: 15px;
+  color: #aba3a3;
+  margin-left: 2px;
+  margin-bottom: 0px;
+}
+
+.video__cn{
+  width: 150px;
+}
+
+.video__channelName {
+  margin-top: 24px;
+  font-size: 18px;
+  color: #aba3a3;
+  margin-left: 10px;
+}
+
+.video__likebutton{
+  margin-left: 70%;
+  color: #fff;
+}
+
+.video__likeCount{
+  margin-top: 4px;
+  color: #fff;
+  font-size: 28px;
+  margin-left: 15px;
+}
+.liked{
+  color: rgb(185, 8, 8);
+}
+
+.video__icon{
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+.video__channelDescription {
+  font-size: 17px;
+  color: #aba3a3;
+  white-space: pre-line; 
+}
+
+.video__grey {
+  padding: 12px;
+  margin-right: 10px;
+  background-color: #2d2b2b;
+}
+
+.video__showMore{
+  font-weight: 700;
+}
+
+.video__commentHead{
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.video__addComment{
+  color: #fff;
+  display: flex;
+  height: 70px;
+}
+
+
+.video__comments{
+  width: 900px;
+}
+
+.video__comment {
+  color: #fff;
+  margin-left: 10px;
+  width: 850px;
+  background-color: #191919;
+  border: none;
+  border-bottom: 1px solid #aba3a3; /* Initial underline */
+  transition: border-bottom-color 0.3s, border-bottom-width 0.3s; /* Transition for color and width */
+}
+
+.video__comment:focus {
+  border: none;
+  color: #fff;
+}
+
+.comment__text{
+  margin-top: 10px;
+}
+
+.comment__text::placeholder{
+  font-size: 27px;
+}
+
+.comment__button{
+  margin-left: 760px;
+  margin-top: 15px;
+  border-color: #fff;
+  color: #fff;
+}
+
+.video__prevComments{
+  margin-top: 20px;
+}

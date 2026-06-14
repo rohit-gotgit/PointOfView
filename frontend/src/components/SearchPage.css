@@ -1,0 +1,21 @@
+.search {
+  background-color: #191919;
+}
+
+.search__content {
+  padding-left: 60px;
+  margin-top: 40px;
+}
+.search__link {
+  text-decoration: none;
+}
+
+.search.less-than-or-equal-to-3 {
+  background-color: #191919;
+  height: 100vh;
+}
+
+.search.more-than-3 {
+  background-color: #191919;
+  
+}

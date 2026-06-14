@@ -1,0 +1,458 @@
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent; 
+}
+
+body::-webkit-scrollbar {
+  width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+.header {
+  background-color: #191919;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  justify-content: space-between;
+  width: 100%;
+  height: 75px;
+  /* border: 1px black solid; */
+  padding: 10px;
+  padding-right: 12px;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+.header__left {
+  display: flex;
+  align-items: center;
+/* margin-top: 1%; */
+  
+}
+
+.header__menu {
+  font-size: 20px;
+  height: 40px;
+  margin-right: 20px;
+  object-fit: contain;
+  color: #fff;
+}
+
+.header__logo {
+  height: 70px;
+  object-fit: contain;
+  margin-left: 10%;
+}
+
+.header__center {
+  flex: 1;
+  text-align: center;
+  /* margin-top: 1%; */
+}
+
+/* .header__searchbar {
+  height: 30px;
+  width: 150px;
+  border-width: 1px;
+  border-radius: 4px;
+  padding-right: 40px;
+  outline: none; 
+  background-color: rgba(25, 25, 25, 0.9);
+}
+
+.header__searchbar::placeholder{
+    font-size: 16px;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+}
+
+.header__image {
+  height: 30px;
+  margin-right: 10px;
+}
+
+.header__searchContainer {
+  position: relative;
+}
+
+
+.header__searchButton {
+  position: absolute;
+  top: 0;
+  left:auto;
+  height: 100%;
+  width: 40px; 
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.header__search{
+color: white;
+} */
+
+/* Header.css */
+
+.header__searchbar {
+  height: 36px; /* Increase height for better visibility */
+  width: calc(100% - 50px); /* Adjust width to accommodate search button */
+  border: 1px solid #d3d3d3; /* Add border */
+  border-radius: 24px; /* Add border radius to make it rounded */
+  padding: 8px 16px; /* Add padding */
+  font-size: 16px; /* Adjust font size */
+  outline: none; 
+  background-color: rgba(25, 25, 25, 0.9);
+  color: white;
+}
+
+.header__searchbar::placeholder {
+  font-size: 16px; /* Adjust placeholder font size */
+}
+
+.header__searchButton {
+  position: absolute;
+  top: 50%;
+  left: auto;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.header__searchButton:focus {
+  outline: none; /* Remove default focus outline */
+}
+
+.header__search  {
+  color: white;
+  font-size: 18px;
+  top: 1%;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+  /* margin-top: 1%; */
+}
+
+.header__image {
+  height: 30px;
+  margin-right: 10px;
+}
+
+.header__searchContainer {
+  position: relative;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+}
+
+.header__right i {
+  font-size:35px;
+  color: white; 
+  margin-right: 20px;
+}
+
+
+.sidebar {
+  position: fixed;
+  top: 0%; 
+  left: 0;
+  background-color: rgba(25, 25, 25, 0.9); 
+  padding: 10px;
+  z-index: 2000; 
+  height: 100vh; 
+  overflow-y: auto; 
+  width: 20%;
+  transition: transform 0.3s ease;
+}
+.sidebar-open {
+  transform: translateX(0);
+}
+.sidebar__menu {
+  font-size: 20px;
+  height: 40px;
+  margin-right: 20px;
+  object-fit: contain;
+  color: white;
+}
+
+.sidebar__logo {
+  height: 40px;
+  object-fit: contain;
+}
+.sidebar__list{
+  padding-top: 30px;
+}
+.sidebar ul {
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
+}
+.sidebar ul li
+{
+  color: white;
+  font-size: 1em;
+  margin-top: 5px;
+
+}
+.sidebar i{
+  color: white;
+  margin-right: 2px;
+}
+.sidebar__list ul li button {
+  margin-bottom: 10px; /* Add margin between buttons */
+}
+.sidebar ul li button .bi{
+margin-right: 5px;
+}
+.explore__list {
+  padding-left: 20px; /* Indent the explore list */
+}
+
+
+
+.explore__list ul li {
+margin-top: 7px;
+font-size: 1em;
+
+}
+
+.explore__list ul li i {
+  margin-right: 15px; /* Add space between icon and text */
+}
+.sidebar ul li button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  color: white;
+  transition: background-color 0.3s ease, border-radius 0.3s ease
+}
+
+.sidebar ul li button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+}
+.sidebar-open {
+  transform: translateX(0);
+}
+
+.sidebar-open ~ .header::before {
+  background-color: rgba(255, 255, 255, 0.5); 
+}
+
+.sidebar-open ~ .header {
+  filter: blur(5px); 
+  pointer-events: none; 
+}
+
+
+@media (max-width: 768px) {
+  .header__left {
+    position: relative;
+  }
+  .sidebar {
+    width: 50%;
+    top: 1%;
+  }
+}
+
+
+@media (min-width: 576px) { 
+  .header__searchbar{
+      width: 300px;
+  }
+  .sidebar {
+    width: 50%;
+    top: 1%;
+  }
+}
+
+@media (min-width: 768px) { 
+
+  .header__searchbar{
+      width: 450px;
+  }
+  .sidebar {
+    width: 50%;
+    top: 1%;
+  }
+}
+
+@media (min-width: 992px) { 
+  .header__searchbar{
+      width: 600px;
+  }
+  .sidebar {
+    width: 20%;
+    top: 1%;
+  }
+}
+
+.hamburger {
+  padding: 15px;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  background-color: transparent;
+}
+.hamburger__container {
+  width: 36px;
+  height: 24px;
+  position: relative;
+}
+.hamburger:hover .hamburger__inner {
+  transform: translate(-51px, 50%);
+  opacity: 0;
+}
+.hamburger:hover .hamburger__inner::before, .hamburger:hover .hamburger__inner::after {
+  transform: translate(102px0);
+  opacity: 0;
+}
+.hamburger.is-active .hamburger__inner {
+  display: none;
+}
+.hamburger__inner {
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 4px;
+  position: absolute;
+  transition-property: transform, opacity;
+  transition-timing-function: ease;
+  transition-duration: 0.4s;
+  top: 50%;
+  transform: translate(5px, -50%);
+  opacity: 1;
+}
+.hamburger__inner::before, .hamburger__inner::after {
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 4px;
+  position: absolute;
+  transition-property: transform, opacity;
+  transition-timing-function: ease;
+  transition-duration: 0.4s;
+  content: "";
+  opacity: 1;
+  transform: translate(-5px, 0);
+}
+.hamburger__inner::before {
+  top: -13px;
+}
+.hamburger__inner::after {
+  top: 13px;
+}
+.hamburger:hover .hamburger__hidden {
+  opacity: 1;
+  transform: translate(0, -50%);
+}
+.hamburger:hover .hamburger__hidden::before, .hamburger:hover .hamburger__hidden::after {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.hamburger.is-active .hamburger__hidden {
+  opacity: 1;
+  transform: rotate(45deg);
+}
+.hamburger.is-active .hamburger__hidden::before {
+  transform: translate(0 13px) rotate(90deg);
+  transform-origin: center;
+}
+.hamburger.is-active .hamburger__hidden::after {
+  transform-origin: center;
+  transform: translate(0, -13px) rotate(0);
+}
+.hamburger__hidden {
+  opacity: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 4px;
+  position: absolute;
+  transition-property: transform, opacity;
+  transition-timing-function: ease;
+  transition-duration: 0.4s;
+  background-color: red;
+  top: 50%;
+  transform: translate(51px,-50%);
+}
+.hamburger__hidden::before, .hamburger__hidden::after {
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 4px;
+  position: absolute;
+  transition-property: transform, opacity;
+  transition-timing-function: ease;
+  transition-duration: 0.4s;
+  background-color: red;
+  content: "";
+  transform: translate(102px,0);
+}
+.hamburger__hidden::before {
+  top: -13px;
+}
+.hamburger__hidden::after {
+  top: 13px;
+}
+
+.dropdown__menu {
+  position: absolute;
+  /* top: calc(100% + 10px);  */
+  right: 0; 
+  background-color: #fff; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+  z-index: 1000; 
+  display: none;
+  background-color: rgba(25, 25, 25, 0.1); 
+  /* height: 10vh; */
+
+}
+.dropdown__menu.active {
+  display: block;
+}
+
+
+.dropdown__menu button {
+  display: block;
+  width: 100%; 
+  padding: 10px 15px; 
+  text-align: left; 
+  color: white; 
+  background-color: transparent; 
+  border: none; 
+  cursor: pointer; 
+}
+
+.dropdown__menu button:hover {
+  background-color: rgba(255, 255, 255, 0.5); 
+  color: black;
+}
+
+
+.dropdown__menu button a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit color from parent */
+  position: relative; /* Set position to relative */
+  /* padding-right: 20px;  */
+  /* padding-top: 1px; */
+}
